@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
           return response.json();
         })
         .then((data) => {
-          const { temp } = data.main;
+          const { temp, feels_like } = data.main;
           const place = data.name;
           const { description, icon } = data.weather[0];
           const { sunrise, sunset } = data.sys;
